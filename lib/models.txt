@@ -1,0 +1,18 @@
+pcinfo.add(Bilgisayarin(
+          marka: doc
+              .getElementsByClassName("pr-new-br")[0]
+              .children[0]
+              .text
+              .toString(),
+          ismi: doc
+              .getElementsByClassName("pr-new-br")[0]
+              .children[1]
+              .text
+              .toString()));
+
+
+
+ pcinfo.add(
+            Bilgisayarin(islemciTipi: element.children[0].text.toString(),
+            ssdKapasitesi:element.children[1].text.toString(),
+            isletimSistemi: element.children[2].text.toString() ));
